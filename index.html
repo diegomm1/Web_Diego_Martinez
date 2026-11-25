@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="description" content="Currículum y portfolio de Diego Martínez Martínez, estudiante de Desarrollo de Aplicaciones Multiplataforma.">
+  <title>Diego Martínez Martínez — Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23c9f269'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='27' font-weight='700' fill='%231c2419'%3EDM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="portfolio-shell">
+    <aside class="sidebar" aria-label="Navegación y preferencias">
+      <a class="brand" href="#general" aria-label="Diego Martínez, inicio">
+        <span class="brand-mark">DM<span>.</span></span>
+        <span class="brand-caption" data-i18n="brandCaption">PORTFOLIO PERSONAL</span>
+      </a>
+
+      <div class="profile-mini">
+        <img src="photo.jpg" alt="Retrato de Diego Martínez Martínez">
+        <div>
+          <strong>Diego Martínez</strong>
+          <span data-i18n="profileRole">Estudiante · DAM</span>
+        </div>
+        <span class="availability-dot" aria-label="Disponible para aprender"></span>
+      </div>
+
+      <div class="nav-label" data-i18n="menuLabel">MENÚ PRINCIPAL</div>
+      <nav class="main-nav" aria-label="Secciones del portfolio">
+        <button class="nav-link active" type="button" data-view="general" aria-current="page">
+          <span class="nav-number">01</span><span data-i18n="navGeneral">General</span><span class="nav-arrow">↗</span>
+        </button>
+        <button class="nav-link" type="button" data-view="sobre-mi">
+          <span class="nav-number">02</span><span data-i18n="navAbout">Sobre mí</span><span class="nav-arrow">↗</span>
+        </button>
+        <button class="nav-link" type="button" data-view="habilidades">
+          <span class="nav-number">03</span><span data-i18n="navSkills">Habilidades</span><span class="nav-arrow">↗</span>
+        </button>
+        <button class="nav-link" type="button" data-view="proyectos">
+          <span class="nav-number">04</span><span data-i18n="navProjects">Proyectos</span><span class="nav-arrow">↗</span>
+        </button>
+        <button class="nav-link" type="button" data-view="intereses">
+          <span class="nav-number">05</span><span data-i18n="navInterests">Intereses</span><span class="nav-arrow">↗</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="nav-label" data-i18n="preferencesLabel">PREFERENCIAS</div>
+        <div class="preference-row">
+          <span class="preference-icon" aria-hidden="true">◐</span>
+          <span data-i18n="appearance">Apariencia</span>
+          <button class="switch" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Cambiar al tema oscuro">
+            <span></span>
+          </button>
+        </div>
+        <div class="preference-row">
+          <span class="preference-icon language-icon" aria-hidden="true">文</span>
+          <span data-i18n="language">Idioma</span>
+          <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to English" lang="en">EN</button>
+        </div>
+        <a class="github-sidebar" href="https://github.com/diegomm1" target="_blank" rel="noopener noreferrer">
+          <span class="github-glyph" aria-hidden="true">⌘</span>
+          <span data-i18n="githubLabel">Mi GitHub</span>
+          <span class="external-arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="sidebar-footnote">© 2026 Diego Martínez</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb"><span data-i18n="breadcrumbHome">PORTFOLIO</span><span>/</span><strong id="current-section" data-i18n="navGeneral">General</strong></div>
+        <span class="topbar-note"><span class="tiny-sparkle">✳</span> <span data-i18n="topbarNote">Construyendo algo con propósito</span></span>
+      </header>
+
+      <section class="view active" id="general" aria-labelledby="general-title">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">ESTUDIANTE DE DESARROLLO · DAM</span></div>
+            <h1 id="general-title"><span data-i18n="heroHello">Hola, soy</span><br>Diego Martínez<span class="heading-period">.</span></h1>
+            <p class="hero-description" data-i18n="heroDescription">Tengo 18 años y estoy aprendiendo a convertir buenas ideas en aplicaciones útiles. Me interesa crear tecnología que mejore lo que hoy ya no funciona.</p>
+            <div class="hero-actions">
+              <button class="button button-primary" type="button" data-go="proyectos"><span data-i18n="seeWork">Explorar mi espacio</span><span aria-hidden="true">↗</span></button>
+              <a class="button button-quiet" href="https://github.com/diegomm1" target="_blank" rel="noopener noreferrer"><span data-i18n="visitGithub">Visitar GitHub</span><span class="github-glyph" aria-hidden="true">⌘</span></a>
+              <a class="button button-download" href="CV_Diego_Martinez.pdf" download><span data-i18n="downloadCv">Descargar currículum</span><span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-avatar-stack"><img src="photo.jpg" alt="" aria-hidden="true"></span>
+              <span data-i18n="metaLearning">Aprendiendo y creando, paso a paso.</span>
+              <span class="meta-separator">·</span><span data-i18n="metaAge">18 años</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="photo-frame">
+              <img src="photo.jpg" alt="Foto de perfil de Diego Martínez Martínez">
+              <span class="photo-index">DM—01</span>
+            </div>
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit-dot"></div>
+            <div class="floating-note"><span class="note-icon">✳</span><span data-i18n="noteText">IDEAS EN<br>MOVIMIENTO</span></div>
+            <span class="visual-coordinate">40° 25′ N<br>03° 42′ O</span>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span data-i18n="introLabel">UN POCO SOBRE MÍ</span><span class="divider-line"></span><span class="divider-spark">✳</span>
+        </div>
+        <div class="overview-grid">
+          <article class="overview-card intro-card">
+            <span class="card-kicker" data-i18n="introKicker">01 — MI CAMINO</span>
+            <h2 data-i18n="introTitle">Aprender hoy.<br>Crear lo que sigue.</h2>
+            <p data-i18n="introBody">Estoy cursando Desarrollo de Aplicaciones Multiplataforma. Me mueve la idea de imaginar productos digitales que resuelvan problemas reales y abran nuevas posibilidades.</p>
+            <button class="text-link" type="button" data-go="sobre-mi"><span data-i18n="moreAbout">Conoce mi historia</span><span>↗</span></button>
+            <span class="card-watermark" aria-hidden="true">01</span>
+          </article>
+          <article class="overview-card study-card">
+            <div class="study-topline"><span class="card-kicker" data-i18n="studyKicker">02 — FORMACIÓN</span><span class="status-pill"><span></span><span data-i18n="studying">EN CURSO</span></span></div>
+            <h2 data-i18n="studyTitle">Desarrollo de<br>Aplicaciones Multiplataforma</h2>
+            <p data-i18n="studyPlace">Formación Profesional de Grado Superior</p>
+            <div class="study-dates"><span>SEP 2026</span><span class="study-progress"><span></span></span><span>JUN 2028</span></div>
+            <div class="study-foot"><span data-i18n="studyStart">Inicio: septiembre 2026</span><span>2026—28</span></div>
+          </article>
+          <article class="overview-card tech-card">
+            <span class="card-kicker" data-i18n="techKicker">03 — MI CAJA DE HERRAMIENTAS</span>
+            <h2 data-i18n="techTitle">Aprendiendo<br>a programar.</h2>
+            <div class="tech-icons" aria-label="Tecnologías que estoy aprendiendo">
+              <div class="tech-icon html-icon" title="HTML"><span class="html-shield">5</span><small>HTML</small></div>
+              <div class="tech-icon css-icon" title="CSS"><span class="css-shield">3</span><small>CSS</small></div>
+              <div class="tech-icon java-icon" title="Java">
+                <svg viewBox="0 0 40 40" role="img" aria-label="Java">
+                  <path d="M19 4c-4 4 5 5 0 9M24 7c-5 5 5 6-1 10M13 18h16l-2 10H15zM12 21H8l1 5 6 2m14-7h4l-1 5-6 2M14 31c4 2 14 2 18 0M17 35c4 1 9 1 13 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg><small>JAVA</small>
+              </div>
+            </div>
+            <button class="text-link" type="button" data-go="habilidades"><span data-i18n="viewSkills">Ver habilidades</span><span>↗</span></button>
+          </article>
+        </div>
+        <div class="bottom-marquee"><span data-i18n="marquee">CURIOSIDAD · CÓDIGO · CREATIVIDAD ·</span><span class="marquee-mark">✳</span><span data-i18n="marquee">CURIOSIDAD · CÓDIGO · CREATIVIDAD ·</span><span class="marquee-mark">✳</span></div>
+      </section>
+
+      <section class="view" id="sobre-mi" aria-labelledby="about-title" hidden>
+        <div class="page-heading">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="aboutEyebrow">EL COMIENZO DE UNA HISTORIA</span></div>
+          <h1 id="about-title" data-i18n="aboutTitle">Sobre mí<span class="heading-period">.</span></h1>
+          <p data-i18n="aboutLead">Un estudiante con ganas de aprender, una meta ambiciosa y muchas ideas por explorar.</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-story">
+            <span class="card-kicker" data-i18n="aboutCardLabel">QUIÉN SOY</span>
+            <h2 data-i18n="aboutCardTitle">La tecnología es una forma de hacer que las ideas lleguen más lejos.</h2>
+            <p data-i18n="aboutParagraphOne">Me llamo Diego Martínez Martínez, tengo 18 años y estudio una FP de Grado Superior en Desarrollo de Aplicaciones Multiplataforma. Empecé en septiembre de 2026 y mi objetivo es terminar en junio de 2028.</p>
+            <p data-i18n="aboutParagraphTwo">Me atrae construir aplicaciones que sean útiles para muchas personas. Creo que todavía hay sistemas que pueden evolucionar y me gustaría participar en ese cambio con soluciones nuevas, bien pensadas y accesibles.</p>
+            <p data-i18n="aboutParagraphThree">Ahora estoy empezando a programar con HTML, CSS y Java. Cada proyecto y cada concepto nuevo son una oportunidad para entender mejor cómo transformar una necesidad en algo que funcione.</p>
+            <div class="quote-block"><span>“</span><p data-i18n="aboutQuote">No quiero quedarme solo con las ideas: quiero aprender a construirlas.</p></div>
+          </article>
+          <aside class="about-side">
+            <div class="about-photo"><img src="photo.jpg" alt="Diego Martínez Martínez"></div>
+            <div class="detail-card"><span class="card-kicker" data-i18n="detailLabel">EN BREVE</span>
+              <div class="detail-row"><span data-i18n="detailName">Nombre</span><strong>Diego Martínez Martínez</strong></div>
+              <div class="detail-row"><span data-i18n="detailAge">Edad</span><strong data-i18n="ageValue">18 años</strong></div>
+              <div class="detail-row"><span data-i18n="detailStudy">Estudios</span><strong data-i18n="detailStudyValue">FP Superior · DAM</strong></div>
+              <div class="detail-row"><span data-i18n="detailDates">Periodo</span><strong>2026 — 2028</strong></div>
+              <div class="detail-row"><span data-i18n="detailFocus">Enfoque</span><strong data-i18n="focusValue">Aplicaciones útiles</strong></div>
+            </div>
+            <a class="github-card" href="https://github.com/diegomm1" target="_blank" rel="noopener noreferrer"><span class="github-glyph" aria-hidden="true">⌘</span><span><strong data-i18n="githubCardTitle">Encuéntrame en GitHub</strong><small>github.com/diegomm1</small></span><span class="external-arrow" aria-hidden="true">↗</span></a>
+          </aside>
+        </div>
+        <div class="section-divider"><span data-i18n="journeyLabel">UNA META A LA VEZ</span><span class="divider-line"></span><span class="divider-spark">✳</span></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-year">2026</span><span class="timeline-dot"></span><div><strong data-i18n="timelineNow">Comienza el recorrido</strong><p data-i18n="timelineNowBody">Inicio del Grado Superior en Desarrollo de Aplicaciones Multiplataforma.</p></div><span class="timeline-tag" data-i18n="timelineCurrent">AHORA</span></article>
+          <article class="timeline-item"><span class="timeline-year">2026—28</span><span class="timeline-dot"></span><div><strong data-i18n="timelineLearn">Aprender construyendo</strong><p data-i18n="timelineLearnBody">Profundizar en programación y desarrollar fundamentos para crear proyectos propios.</p></div><span class="timeline-tag" data-i18n="timelineInProgress">EN CURSO</span></article>
+          <article class="timeline-item"><span class="timeline-year">2028</span><span class="timeline-dot"></span><div><strong data-i18n="timelineNext">El siguiente capítulo</strong><p data-i18n="timelineNextBody">Finalización prevista del ciclo formativo en junio de 2028 y nuevos retos por delante.</p></div><span class="timeline-tag" data-i18n="timelineGoal">OBJETIVO</span></article>
+        </div>
+      </section>
+
+      <section class="view" id="habilidades" aria-labelledby="skills-title" hidden>
+        <div class="page-heading">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="skillsEyebrow">HERRAMIENTAS, ACTITUD Y APRENDIZAJE</span></div>
+          <h1 id="skills-title" data-i18n="skillsTitle">Habilidades<span class="heading-period">.</span></h1>
+          <p data-i18n="skillsLead">Una base que estoy formando y habilidades personales que quiero poner al servicio de buenos proyectos.</p>
+        </div>
+        <div class="skills-intro"><span class="skills-symbol">✳</span><div><strong data-i18n="skillsNoteTitle">En construcción, con intención.</strong><p data-i18n="skillsNoteBody">Estoy empezando mi recorrido profesional. Estas tecnologías y competencias representan lo que estoy aprendiendo y las fortalezas que quiero desarrollar.</p></div></div>
+        <div class="section-divider"><span data-i18n="techSkillsLabel">TECNOLOGÍAS EN APRENDIZAJE</span><span class="divider-line"></span><span class="divider-spark">01</span></div>
+        <div class="skill-tech-grid">
+          <article class="skill-tech-card"><div class="skill-card-top"><span class="skill-logo skill-html">5</span><span class="skill-status" data-i18n="beginner">EMPEZANDO</span></div><h2>HTML</h2><p data-i18n="htmlDescription">Estructura y contenido para páginas web accesibles y bien organizadas.</p><div class="skill-tags"><span data-i18n="tagStructure">Estructura web</span><span data-i18n="tagSemantics">Semántica</span></div></article>
+          <article class="skill-tech-card"><div class="skill-card-top"><span class="skill-logo skill-css">3</span><span class="skill-status" data-i18n="beginner">EMPEZANDO</span></div><h2>CSS</h2><p data-i18n="cssDescription">Estilos, composición visual y diseño adaptable para distintas pantallas.</p><div class="skill-tags"><span data-i18n="tagDesign">Diseño visual</span><span data-i18n="tagResponsive">Responsive</span></div></article>
+          <article class="skill-tech-card"><div class="skill-card-top"><span class="skill-logo skill-java"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M19 4c-4 4 5 5 0 9M24 7c-5 5 5 6-1 10M13 18h16l-2 10H15zM12 21H8l1 5 6 2m14-7h4l-1 5-6 2M14 31c4 2 14 2 18 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="skill-status" data-i18n="beginner">EMPEZANDO</span></div><h2>Java</h2><p data-i18n="javaDescription">Primeros pasos en lógica de programación y fundamentos del lenguaje.</p><div class="skill-tags"><span data-i18n="tagProgramming">Programación</span><span data-i18n="tagFoundations">Fundamentos</span></div></article>
+        </div>
+        <div class="section-divider"><span data-i18n="peopleSkillsLabel">FORTALEZAS PERSONALES</span><span class="divider-line"></span><span class="divider-spark">02</span></div>
+        <div class="soft-skills-grid">
+          <article class="soft-skill"><span>↗</span><div><strong data-i18n="softCuriosity">Curiosidad</strong><p data-i18n="softCuriosityBody">Me interesa descubrir cómo funcionan las cosas y qué se puede mejorar.</p></div></article>
+          <article class="soft-skill"><span>✳</span><div><strong data-i18n="softPersistence">Constancia</strong><p data-i18n="softPersistenceBody">Avanzar con paciencia y seguir practicando cuando algo todavía no sale.</p></div></article>
+          <article class="soft-skill"><span>◎</span><div><strong data-i18n="softProblemSolving">Pensamiento práctico</strong><p data-i18n="softProblemSolvingBody">Buscar el problema que importa antes de lanzarme a pensar una solución.</p></div></article>
+          <article class="soft-skill"><span>⌘</span><div><strong data-i18n="softAdaptability">Mentalidad flexible</strong><p data-i18n="softAdaptabilityBody">Estar dispuesto a aprender nuevos métodos, herramientas y perspectivas.</p></div></article>
+        </div>
+        <div class="skills-footer"><span class="footer-star">✳</span><span data-i18n="skillsFooter">Una habilidad nueva cada vez. El progreso también es parte del proyecto.</span></div>
+      </section>
+
+      <section class="view" id="proyectos" aria-labelledby="projects-title" hidden>
+        <div class="page-heading">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="projectsEyebrow">IDEAS QUE PUEDEN CONVERTIRSE EN PRODUCTOS</span></div>
+          <h1 id="projects-title" data-i18n="projectsTitle">Proyectos<span class="heading-period">.</span></h1>
+          <p data-i18n="projectsLead">Todavía estoy al principio del camino: aquí hay conceptos e ideas que me gustaría explorar a medida que aprendo.</p>
+        </div>
+        <div class="projects-banner"><span class="projects-banner-icon">✳</span><div><strong data-i18n="projectConceptsTitle">Ideas en fase de concepto</strong><p data-i18n="projectConceptsBody">Estos son ejercicios de exploración, no productos publicados. Iré añadiendo proyectos reales mientras desarrollo mis habilidades.</p></div><span class="concept-count">03</span></div>
+        <div class="project-grid">
+          <article class="project-card project-featured"><div class="project-art art-one"><span class="art-orbit"></span><span class="art-star">✳</span><span class="art-label">01 / CONCEPTO</span><span class="art-window"><i></i><i></i><i></i><b>menos ruido.<br>más claridad.</b></span></div><div class="project-info"><div class="project-meta"><span data-i18n="projectTagProductivity">CONCEPTO · PRODUCTIVIDAD</span><span>01</span></div><h2 data-i18n="projectOneTitle">Un día con más foco</h2><p data-i18n="projectOneBody">Una aplicación sencilla para organizar tareas, dar prioridad a lo importante y convertir una lista larga en pasos manejables.</p><div class="project-tech"><span>HTML</span><span>CSS</span><span data-i18n="tagInPlanning">En exploración</span></div></div></article>
+          <article class="project-card"><div class="project-art art-two"><span class="art-grid"></span><span class="art-plant">✳</span><span class="art-label">02 / CONCEPTO</span><span class="art-chip">IDEA → HÁBITO</span></div><div class="project-info"><div class="project-meta"><span data-i18n="projectTagLearning">CONCEPTO · APRENDIZAJE</span><span>02</span></div><h2 data-i18n="projectTwoTitle">Pequeños pasos</h2><p data-i18n="projectTwoBody">Una propuesta para registrar objetivos personales con acciones pequeñas, seguimiento amable y motivación sin presión.</p><div class="project-tech"><span>Java</span><span data-i18n="tagInPlanning">En exploración</span></div></div></article>
+          <article class="project-card"><div class="project-art art-three"><span class="art-sun">◌</span><span class="art-label">03 / CONCEPTO</span><div class="art-cards"><span></span><span></span><span></span></div><span class="art-caption">COMUNIDAD × TECNOLOGÍA</span></div><div class="project-info"><div class="project-meta"><span data-i18n="projectTagCommunity">CONCEPTO · UTILIDAD SOCIAL</span><span>03</span></div><h2 data-i18n="projectThreeTitle">Cerca de ti</h2><p data-i18n="projectThreeBody">La idea de un espacio para descubrir recursos, lugares y servicios útiles que existen alrededor de cada persona.</p><div class="project-tech"><span>HTML</span><span>CSS</span><span data-i18n="tagInPlanning">En exploración</span></div></div></article>
+        </div>
+        <div class="github-strip"><div class="github-strip-mark">⌘</div><div><strong data-i18n="githubStripTitle">¿Quieres ver mi código?</strong><p data-i18n="githubStripBody">Mis próximos ejercicios y proyectos vivirán en GitHub.</p></div><a href="https://github.com/diegomm1" target="_blank" rel="noopener noreferrer"><span data-i18n="githubStripLink">Abrir perfil</span><span>↗</span></a></div>
+      </section>
+
+      <section class="view" id="intereses" aria-labelledby="interests-title" hidden>
+        <div class="page-heading">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="interestsEyebrow">LO QUE ME DA CURIOSIDAD</span></div>
+          <h1 id="interests-title" data-i18n="interestsTitle">Intereses<span class="heading-period">.</span></h1>
+          <p data-i18n="interestsLead">Me interesan las ideas que conectan tecnología, creatividad y mejoras cotidianas.</p>
+        </div>
+        <div class="interests-feature">
+          <div class="interest-orbit-visual"><span class="interest-orbit-ring ring-a"></span><span class="interest-orbit-ring ring-b"></span><span class="interest-center">✳</span><span class="interest-orbit-label label-a">IDEA</span><span class="interest-orbit-label label-b">IMPACTO</span><span class="interest-orbit-label label-c">TECNOLOGÍA</span></div>
+          <div class="interest-feature-copy"><span class="card-kicker" data-i18n="interestFeatureLabel">MI GRAN OBJETIVO</span><h2 data-i18n="interestFeatureTitle">Crear aplicaciones que hagan la diferencia.</h2><p data-i18n="interestFeatureBody">Aspiro a construir un ecosistema de aplicaciones que sirvan a muchas personas e innoven sistemas que se han quedado atrás. Es una meta ambiciosa y, para mí, empieza por aprender bien los fundamentos.</p><button class="text-link" type="button" data-go="habilidades"><span data-i18n="interestFeatureLink">Descubre lo que estoy aprendiendo</span><span>↗</span></button></div>
+        </div>
+        <div class="section-divider"><span data-i18n="interestTopicsLabel">TEMAS QUE QUIERO EXPLORAR</span><span class="divider-line"></span><span class="divider-spark">✳</span></div>
+        <div class="interest-list">
+          <article class="interest-item"><span class="interest-number">01</span><span class="interest-item-icon">⌘</span><div><h2 data-i18n="interestOneTitle">Aplicaciones con propósito</h2><p data-i18n="interestOneBody">Productos digitales sencillos que solucionan problemas concretos y facilitan tareas del día a día.</p></div><span class="interest-arrow">↗</span></article>
+          <article class="interest-item"><span class="interest-number">02</span><span class="interest-item-icon">◈</span><div><h2 data-i18n="interestTwoTitle">Modernizar lo que ya existe</h2><p data-i18n="interestTwoBody">Repensar sistemas desactualizados con herramientas actuales y experiencias más claras para las personas.</p></div><span class="interest-arrow">↗</span></article>
+          <article class="interest-item"><span class="interest-number">03</span><span class="interest-item-icon">✳</span><div><h2 data-i18n="interestThreeTitle">Aprender creando</h2><p data-i18n="interestThreeBody">Practicar programación, diseñar ideas y convertir lo aprendido en proyectos cada vez más completos.</p></div><span class="interest-arrow">↗</span></article>
+          <article class="interest-item"><span class="interest-number">04</span><span class="interest-item-icon">◎</span><div><h2 data-i18n="interestFourTitle">Diseño para todo el mundo</h2><p data-i18n="interestFourBody">Crear interfaces comprensibles y cómodas, pensadas para diferentes personas y tamaños de pantalla.</p></div><span class="interest-arrow">↗</span></article>
+        </div>
+        <div class="interests-footer"><span>—</span><p data-i18n="interestsFooter">Todavía estoy descubriendo mi camino. Y esa es una de las partes que más me entusiasma.</p><span>✳</span></div>
+      </section>
+
+      <footer class="main-footer"><span data-i18n="footerLeft">HECHO CON CURIOSIDAD Y CÓDIGO</span><span>Diego Martínez Martínez <span class="footer-period">·</span> 2026</span></footer>
+    </main>
+  </div>
+</body>
+</html>

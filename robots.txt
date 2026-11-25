@@ -1,0 +1,4 @@
+# Instrucciones para rastreadores en caso de publicar este sitio en un servidor web.
+# Un archivo local no publica ni registra automáticamente el sitio en buscadores.
+User-agent: *
+Allow: /
